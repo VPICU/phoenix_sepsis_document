@@ -12,7 +12,7 @@ Here is how each organ system component is calculated.
 ### Overview
 Calculated based on the lowest available PFR and SFR with consideration for Invasive Mechanical Ventilation (IMV) and Any Respiratory Support (ARS) within the past 6 hours.
 
-* 0 points if P:F ratio >= 400 and S:F ratio >= 292
+* 0 points if P:F ratio >= 400 or S:F ratio >= 292
 * 1 point if P:F ratio < 400 on any respiratory support or S:F ratio < 292 on any respiratory support
 * 2 points if P:F ratio between 101 and 200 + IMV or S:F ratio between 149 and 220 + IMV
 * 3 points if P:F ratio $$\leq$$ 100 + IMV or S:F ratio $$\leq$$ 148 + IMV

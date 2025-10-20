@@ -101,7 +101,7 @@ We used the most recent GCS assessment within the past 12 hours and Pupillary Re
 (1 point)
 We used the most recent Glucose value from the past 12 hours
 
-* 1 - Glucose < 50 or >50
+* 1 - Glucose < 50 or > 150
 
 ## Immunologic
 (1 point)

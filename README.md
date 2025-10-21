@@ -19,7 +19,7 @@ Calculated based on the lowest available PFR and SFR with consideration for Inva
 
 ### Defining IMV/ORS
 * **IMV**: A Cerner event "Type of Oxygen Administration" was charted with a value of "With Ventilator"
-* **ARS (Any Respiratory Support)**: "Type of Oxygem Administration" contained any value that was not "Discontinued." This includes the following values: Continuous Mist, Discontinued, High Flow Nasal Cannula, Trach Collar, Hood, Non-Rebreather, Bi-Pap, Blow-by, Partial Rebreather, Simple Mask, T-Tube/Piece, Trach Collar, Venturi Mask, With Bi-Level, With CPAP, With Ventilator
+* **ARS (Any Respiratory Support)**: "Type of Oxygen Administration" contained any value that was not "Discontinued." This includes the following values: Continuous Mist, Discontinued, High Flow Nasal Cannula, Trach Collar, Hood, Non-Rebreather, Bi-Pap, Blow-by, Partial Rebreather, Simple Mask, T-Tube/Piece, Trach Collar, Venturi Mask, With Bi-Level, With CPAP, With Ventilator
 
 ### Calculating Oxygenation Level
 * **S/F Ratio**: SpO2/FiO2 (_cannot be calculated if SpO2 > 97_)
@@ -31,17 +31,17 @@ FiO2 was forward-filled within the same "Type of Oxygen Administration" group. S
 (6 possible points)
 
 ### Overview 
-Composed of 3 components: Presence of Systemic Vasoactives, Lactate, and Age-Based Mean Arterial Pressure
+Composed of 3 components: Presence of Systemic Vasoactive Medications, Lactate, and Age-Based Mean Arterial Pressure
 
 ### Presence of Vasoactives
 (2 points)
 
-Based on the # of Vasoactivate meds received through an IV within the past 6h
+Based on the # of vasoactive meds received through an IV within the past 6h
 * 0 - No vasoactive meds
 * 1 - 1 vasoactive med
 * 2 - 2 vasoactive meds
 
-The following vasoactive medications were considered: Dobutamine, Dopamine, Epinephrine, Milrinone, Norepinephrine, Vasopressin.
+The following vasoactive medications were considered: Dobutamine, Dopamine, Epinephrine, Milrinone, Norepinephrine, Vasopressin. Vasopressin, however, was only considered if it was given with another vasoactive drug.
 
 IV route administration was determined by checking the presence of the substring "kg/" in the Cerner `event tag` column for vasoactive drugs.
 
